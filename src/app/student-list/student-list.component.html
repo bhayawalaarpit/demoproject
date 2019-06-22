@@ -1,0 +1,22 @@
+<table class="table" id="user">
+  <caption class="thead-dark">Student Detail</caption>
+  <tr>
+    <th scope="col">Sr.No.</th>
+    <th scope="col">Name</th>
+    <th scope="col">City</th>
+    <th scope="col">Cource</th>
+    <th scope="col">Delete</th>
+  </tr>
+
+  <tr *ngFor="let i of studentlist;let no = index ">
+    <td><a  routerLink="/edit/{{i.id}}"> {{no+1}} </a> </td>
+    <td><a > {{i.name}} </a></td>
+    <td><a > {{i.city}} </a></td>
+    <td><a > {{i.cource}} </a> </td>
+    <td><a  (click)="onDelete(i.id,no)">Delete</a></td>
+  </tr>
+  <!-- <tr>
+    <td colspan="5"><button type="button" class="btn btn-primary pull-right" routerLink="/edit/0">Add New
+        Student</button></td>
+  </tr> -->
+</table>

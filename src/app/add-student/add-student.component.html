@@ -1,0 +1,89 @@
+<!-- <h1>Register</h1> -->
+
+    <div class="panel panel-default col-md-8" style="margin-left: 15%; margin-right: auto;">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" (studentlist_OUT)="secoundcomponent($event)">
+        <div class="panel-default panel-heading">
+            Create User
+        </div>
+
+        <div class="panel-body">
+            <div class="form-group">
+                <input type="hidden" name="id" class="form-control" #id="ngModel" [(ngModel)]="studentlist.id" />
+            </div>
+            <!-- Name -->
+            <div class="form-group" [class.has-error]="name.invalid && name.touched"
+                [class.has-success]="name.is-valid">
+                <label class="control-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" [(ngModel)]="studentlist.name" required pattern="^[\S]{2,}[\s]*[\S]*$"
+                    #name="ngModel" placeholder="Name" />
+                <span *ngIf="name.errors?.pattern && name.touched" class="help-block">
+                    Name is invalid 
+                </span>
+
+                <span *ngIf="name.errors?.required && name.touched" class="help-block">
+                        Name is Required
+                </span>
+            </div>
+
+            <!-- City -->
+            <div class="form-group" [class.has-error]="city.invalid && city.touched"
+                [class.has-success]="city.is-valid">
+                <label class="control-label" for="city">City</label>
+                <input type="text" name="city" id="city" class="form-control" [(ngModel)]="studentlist.city" required pattern="^[\S]{2,}[\s]*[\S]*$"
+                    #city="ngModel" placeholder="City" />
+                <span *ngIf="city.errors?.required && city.touched" class="help-block">
+                    City is Required
+                </span>
+                <span *ngIf="city.errors?.pattern && city.touched" class="help-block">
+                    City is invalid
+                </span>
+            </div>
+
+            <!-- Cource -->
+            <div class="form-group" [class.has-error]="cource.invalid && cource.touched"
+                [class.has-success]="cource.is-valid">
+                <label class="control-label" for="cource">Cource</label>
+                <input type="text" name="cource" id="cource" class="form-control" [(ngModel)]="studentlist.cource" required  pattern="^[\S]{2,}[\s]*[\S]*$"
+                    #cource="ngModel" placeholder="Cource" />
+                <span *ngIf="cource.errors?.required && cource.touched" class="help-block">
+                    Cource is Required
+                </span>
+                <span *ngIf="cource.errors?.pattern && cource.touched" class="help-block">
+                    Cource is invalid
+                </span>
+            </div>
+            <button type="submit" class="btn btn-primary pull-left"  [disabled]="f.invalid" >Save</button>
+            <button type="reset" class="btn btn-danger rest pull-right" [disabled]="f.invalid" onclick="onreset()">Clear</button>
+        </div>
+        
+        <!-- </div> -->
+    </form>
+    </div>
+
+
+
+<!-- <div class="form-group">
+        <input type="hidden" name="id" class="form-control" #id="ngModel" [(ngModel)]="studentlist.id" />
+    </div>
+    <div class="form-group">
+        <input placeholder="Name" type="text" name="name" class="form-control" #name="ngModel"
+            [(ngModel)]="studentlist.name" />
+    </div> -->
+<!-- <div class="form-group">
+        <input placeholder="City" type="text" name="city" class="form-control" #city="ngModel"
+            [(ngModel)]="studentlist.city" />
+    </div> -->
+<!-- <div class="form-group">
+        <input placeholder="Cource" type="text" name="cource" class="form-control" #city="ngModel"
+            [(ngModel)]="studentlist.cource" />
+    </div> -->
+<!-- <div class="form-group">
+        <button type="submit" class="btn btn-primary pull-left">Save</button>
+    </div>
+    <div class="form-group">
+        <button type="reset" class="btn btn-primary rest pull-right" onclick="onreset()">Clear</button>
+    </div> -->
+
+
+    <!-- <button _ngcontent-jft-c4="" class="float-right btn btn-success btn-sm" type="submit">Add</button>
+    <button _ngcontent-jft-c4="" class="float-left mr-2 btn btn-danger btn-sm" type="reset">Clear</button> -->

@@ -1,0 +1,34 @@
+{
+  "student": [
+    {
+      "id": 5,
+      "name": "Kamalesh",
+      "city": "Surat",
+      "cource": "BCA"
+    },
+    {
+      "id": 6,
+      "name": "Jigi",
+      "city": "Surat",
+      "cource": "MCA"
+    },
+    {
+      "name": "Vaibhav",
+      "city": "Surat",
+      "cource": "MCA",
+      "id": 7
+    },
+    {
+      "name": "Nishi",
+      "city": "Surat",
+      "cource": "MCA",
+      "id": 9
+    },
+    {
+      "name": "Kajal",
+      "city": "Surat",
+      "cource": "MCA",
+      "id": 10
+    }
+  ]
+}

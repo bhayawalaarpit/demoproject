@@ -1,0 +1,12 @@
+{
+	"resource": "/e:/ABWork/Angular5/demoproject/src/app/student-list/student-list.component.ts",
+	"owner": "typescript",
+	"code": "1219",
+	"severity": 8,
+	"message": "Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option in your 'tsconfig' or 'jsconfig' to remove this warning.",
+	"source": "ts",
+	"startLineNumber": 10,
+	"startColumn": 14,
+	"endLineNumber": 10,
+	"endColumn": 34
+}

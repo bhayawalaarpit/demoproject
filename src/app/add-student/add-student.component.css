@@ -1,0 +1,54 @@
+/* #user{
+    width: 85%;
+    margin-left: 8%;
+}
+#user tr:hover {background-color: #ddd; cursor: pointer}
+
+#user table,#user td,#user th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  #user table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #user th,#user td {
+    padding: 15px;
+  }
+  #user caption{
+    background: rgb(248, 248, 252);
+    color: maroon;
+    text-align: center;   
+    font-size: 40px; 
+  }
+  a:hover{
+    cursor: pointer;
+    text-decoration:red;
+    text-decoration-line: underline;
+    
+  }
+
+  input{
+    width: 85%;
+    margin-left: 2%;
+  }
+ 
+
+  h1{
+    background: rgb(248, 248, 252);
+    color: maroon;
+    text-align: center;   
+    font-size: 60px; 
+    width: 85%;
+    margin-left: 2%;
+  }
+
+  button{
+    margin-left: 2%;
+  }
+
+  rest{
+    margin-right:15% ;
+  } */
